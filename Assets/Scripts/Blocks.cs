@@ -6,7 +6,7 @@ using UnityEngine;
 
 
     [ExecuteInEditMode]
-    public class Editor : MonoBehaviour
+    public class Blocks : MonoBehaviour
     {
         [SerializeField] [Range(1f, 50f)] private float grid = 10f;
 
@@ -22,7 +22,9 @@ using UnityEngine;
 
             _textMesh = GetComponentInChildren<TextMesh>();
 
-            _textMesh.text = editPos.x + "," + editPos.z;
+            String label = _textMesh.text = editPos.x/grid + "," + editPos.z/grid;
+
+            gameObject.name = label;
         }
     }
 

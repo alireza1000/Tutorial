@@ -678,7 +678,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2228239356670037719, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
   m_PrefabInstance: {fileID: 963893437}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2034642652}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cdc97dee7c88054ba59c03692dcdeca, type: 3}
@@ -1572,8 +1572,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.6109845, y: -0.0030929567, z: 0.0023804551, w: -0.79163295}
-  m_LocalPosition: {x: -4.8525033, y: 22.371712, z: -12.347082}
+  m_LocalRotation: {x: -0.55272025, y: 0.00076673814, z: -0.0011940208, w: -0.8333657}
+  m_LocalPosition: {x: -2.7888334, y: 9.7438965, z: -6.3737183}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1652,6 +1652,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 896320334}
     m_Modifications:
+    - target: {fileID: 2228239356670037719, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1160381116}
     - target: {fileID: 3231328036755008940, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
       propertyPath: m_Text
       value: -4,-5
@@ -1865,6 +1869,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8419494293602732483, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
   m_PrefabInstance: {fileID: 1132763991}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1160381116 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3931395702200663640, guid: e2e5431085908724fa010bfd3805e7da, type: 3}
+  m_PrefabInstance: {fileID: 6490139376291715793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6b5f5d19cd5884ebfb81a11aaec64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1197592389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2096,9 +2111,17 @@ PrefabInstance:
       propertyPath: m_Text
       value: 1,0
       objectReference: {fileID: 0}
+    - target: {fileID: 3447567442521620328, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
+      propertyPath: m_TagString
+      value: start
+      objectReference: {fileID: 0}
     - target: {fileID: 5665507543236829417, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
       propertyPath: m_Name
       value: 1,0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665507543236829417, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8419494293602732483, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
       propertyPath: m_RootOrder
@@ -2382,6 +2405,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cdc97dee7c88054ba59c03692dcdeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2034642652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5665507543236829417, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
+  m_PrefabInstance: {fileID: 963893437}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2052881526 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2228239356670037719, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
@@ -2400,6 +2428,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 896320334}
     m_Modifications:
+    - target: {fileID: 2228239356670037719, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1160381116}
     - target: {fileID: 3231328036755008940, guid: a24a97ad6542244429c3c19b721e29cc, type: 3}
       propertyPath: m_Text
       value: -5,1
@@ -2598,6 +2630,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3931395702200663640, guid: e2e5431085908724fa010bfd3805e7da, type: 3}
+      propertyPath: end
+      value: 
+      objectReference: {fileID: 1612235673}
+    - target: {fileID: 3931395702200663640, guid: e2e5431085908724fa010bfd3805e7da, type: 3}
+      propertyPath: start
+      value: 
+      objectReference: {fileID: 1908281467}
+    - target: {fileID: 3931395702200663640, guid: e2e5431085908724fa010bfd3805e7da, type: 3}
+      propertyPath: blocks
+      value: 
+      objectReference: {fileID: 80686305}
+    - target: {fileID: 3931395702200663640, guid: e2e5431085908724fa010bfd3805e7da, type: 3}
+      propertyPath: endBlocks
+      value: 
+      objectReference: {fileID: 496621754}
+    - target: {fileID: 3931395702200663640, guid: e2e5431085908724fa010bfd3805e7da, type: 3}
+      propertyPath: gameObject
+      value: 
+      objectReference: {fileID: 2034642652}
+    - target: {fileID: 3931395702200663640, guid: e2e5431085908724fa010bfd3805e7da, type: 3}
+      propertyPath: startBlocks
+      value: 
+      objectReference: {fileID: 80686305}
     - target: {fileID: 3931395702200663640, guid: e2e5431085908724fa010bfd3805e7da, type: 3}
       propertyPath: way.Array.data[0]
       value: 

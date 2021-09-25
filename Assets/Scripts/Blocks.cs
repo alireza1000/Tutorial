@@ -4,27 +4,32 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
+public partial class Blocks : MonoBehaviour
+{
+    [SerializeField] [Range(1f, 50f)] private float grid = 10f;
 
-    [ExecuteInEditMode]
-    public class Blocks : MonoBehaviour
+    private TextMesh _textMesh;
+
+
+    
+    void Update()
     {
-        [SerializeField] [Range(1f, 50f)] private float grid = 10f;
+        Vector3 editPos;
+        editPos.x = Mathf.RoundToInt(transform.position.x / grid) * grid;
+        editPos.z = Mathf.RoundToInt(transform.position.z / grid) * grid;
 
-        private TextMesh _textMesh;
+        transform.position = new Vector3(editPos.x, 0f, editPos.z);
 
-        void Update()
-        {
-            Vector3 editPos;
-            editPos.x = Mathf.RoundToInt(transform.position.x / grid) * grid;
-            editPos.z = Mathf.RoundToInt(transform.position.z / grid) * grid;
+        _textMesh = GetComponentInChildren<TextMesh>();
 
-            transform.position = new Vector3(editPos.x, 0f, editPos.z);
+        String label = _textMesh.text = editPos.x / grid + "," + editPos.z / grid;
 
-            _textMesh = GetComponentInChildren<TextMesh>();
-
-            String label = _textMesh.text = editPos.x/grid + "," + editPos.z/grid;
-
-            gameObject.name = label;
-        }
+        gameObject.name = label;
     }
 
+    public Vector2 GetPosition()
+    {
+        Vector2 Positin = new Vector2(transform.position.x, transform.position.z);
+        return Positin;
+    }
+}

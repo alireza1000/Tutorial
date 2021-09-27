@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - start
+  - end
+  - Center
+  - endCenter
+  - startCenter
   layers:
   - Default
   - TransparentFX
